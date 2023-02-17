@@ -1,8 +1,12 @@
-window.onload = (() => {
 
     // ANIMATIONS FOR LOG IN AND REGISTER
 
-    const homeButton = document.querySelector(".home-btn")
+    window.onload = () => {
+
+
+console.log("LOADING SCTIPTS");
+    const homeButton = document.querySelector(".home-btn");
+    console.log("HOME BTN: ", homeButton);
     const loginPage = document.querySelector(".login-page");
     const loginButton = document.querySelector(".login-btn");
     const registerButton = document.querySelector(".register-btn");
@@ -179,4 +183,4 @@ window.onload = (() => {
 
 
 
-})
+}

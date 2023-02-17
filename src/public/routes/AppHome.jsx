@@ -9,19 +9,19 @@ import { useNavigate } from "react-router-dom";
 
 function AppHome() {
 
-    useEffect(() => {
-        console.log("MAKING SCRIPT");
-        const script = document.createElement('script');
+    // useEffect(() => {
+    //     console.log("MAKING SCRIPT");
+    //     const script = document.createElement('script');
 
-        script.src = "../scripts/ApphomeScript.js";
-        script.async = true;
+    //     script.src = "../scripts/ApphomeScript.js";
+    //     script.async = true;
 
-        document.body.appendChild(script);
+    //     document.body.appendChild(script);
 
-        return () => {
-            document.body.removeChild(script);
-        }
-    }, []);
+    //     return () => {
+    //         document.body.removeChild(script);
+    //     }
+    // }, []);
     return (
         <div>
             <Home />
