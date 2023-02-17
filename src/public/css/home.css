@@ -1,0 +1,421 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.home-contents {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.find1 {
+  opacity: 1;
+}
+
+
+
+/* LOG IN PAGE   */
+
+.login-page {
+  background-color: #171616;
+  position: absolute;
+  top: -300px;
+  right: 120%;
+  width: 800px;
+  height: 1000px;
+  transform: rotate(-70deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 0.2s;
+  color: white;
+  z-index: 10;
+
+
+}
+
+.login-page.login-show {
+  opacity: 1;
+  right: 40%;
+  transition: right 0.4s;
+}
+
+
+
+.login {
+  position: relative;
+  transform: rotate(70deg);
+  margin-bottom: 190px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+
+}
+
+.login h1 {
+  margin-top: 0px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 300px;
+}
+
+.login-form hr {
+  width: 100%;
+}
+
+.login-form input {
+  height: 35px;
+  color: white;
+  background-color: #171616;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.login-form button {
+  height: 35px;
+  color: white;
+  background-color: #171616;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.login-form button:hover {
+  background-color: gray;
+  transition: 0.2s ease-out;
+}
+
+::placeholder {
+  color: white;
+}
+
+/* REGISTER PAGE */
+.register-page {
+  background-color: #171616;
+  position: absolute;
+  top: -300px;
+  right: 120%;
+  width: 800px;
+  height: 1000px;
+  transform: rotate(-70deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 0.2s;
+  color: white;
+  z-index: 10;
+}
+
+.register-page.register-show {
+  opacity: 1;
+  right: 40%;
+  transition: 0.4s;
+}
+
+
+
+.register {
+  position: relative;
+  transform: rotate(70deg);
+  margin-bottom: 40px;
+  margin-right: 190px;
+  width: 300px;
+  
+}
+
+.account-as {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 40px;
+  margin-bottom: 20px;
+}
+
+.account-as div {
+  border-style: solid;
+  border-width: 1px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.account-as-btn h4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-as-btn-coach {
+  width: 170px;
+}
+
+.account-as-btn-gym {
+  width: 60px;
+}
+
+.account-as-span {
+  width: 0px;
+  height: 100%;
+  background-color: red;
+  transition: 0.2s ease-in;
+}
+
+.account-as-span-active {
+  width: 5px;
+}
+
+
+/* MAIN TEXTS */
+
+
+
+.main-texts {
+  padding-top: 150px;
+  height: auto;
+  background-color: #171616;
+  padding-left: 5%;
+  flex-basis: 30%;
+  padding-right: 80px;
+  transition: 0.4s;
+
+}
+
+.main-texts.main-texts-active {
+  flex-basis: 60%;
+  transition: 0.4s;
+}
+
+.main-texts-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: x-large;
+  color: white;
+  width: 450px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main-texts-hide {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.find {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.find-hide {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main-texts-line {
+  width: 300px;
+  align-self: flex-start;
+  background-color: white;
+  margin-left: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main-texts-line-hide {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.find {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 30px;
+  height: 60px;
+  padding: 0;
+}
+
+.find.hide-find {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+
+.main-image {
+  flex-basis: 70%;
+  background-image: url("../images/martialArtsImages/boxing.jpg");
+  background-position: 50% 0;
+
+}
+
+.main-image.bw {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.main-texts div hr {
+  background-color: white;
+}
+
+
+.gym-txt {
+  margin: 0;
+  transition: 0.5s ease;
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.gym-txt:hover {
+  color: gray;
+}
+
+
+
+
+@media(max-width:920px) {
+
+
+
+  .home-contents {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    height: 600px;
+  }
+  .login-page {
+    top: 0px;
+    transform: rotate(0deg);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .register-page {
+    top: 0px;
+    transform: rotate(0deg);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  
+
+  .login {
+    transform: rotate(0deg);
+    margin: auto;
+  }
+
+  .register {
+    transform: rotate(0deg);
+    margin: auto;
+  }
+
+
+  .login-page.login-show {
+    opacity: 1;
+    right: 0%;
+  }
+
+  .register-page.register-show {
+    opacity: 1;
+    right: 0%;
+  }
+
+
+
+  .main-texts {
+    flex-basis: 100%;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .main-texts.main-texts-active {
+    flex-basis: 100%;
+  }
+  .main-texts-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+  .main-texts-line {
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-texts-info h1 {
+    width: 80%;
+  }
+
+  .find {
+    justify-content: space-around;
+  }
+
+  .main-image {
+    display: none;
+    /* flex-basis: 30%;
+    width: 100%;
+    height: 700px;
+    background-position: 20% 0; */
+
+  }
+
+  .main-texts div hr {
+    margin: auto;
+  }
+}
+
+@media(max-width:420px) {
+
+
+  .main-texts-info {
+    font-size: medium;
+  }
+
+  .main-texts-line {
+    margin-top: 40px;
+  }
+
+  .find {
+    flex-direction: column;
+    margin-top: 40px;
+    height: 120px;
+    justify-content: center;
+  }
+
+
+  
+
+}

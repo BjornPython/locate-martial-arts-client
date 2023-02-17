@@ -1,0 +1,162 @@
+.martial-arts-page {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.martial-arts {
+    width: 90%;
+    margin-top: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    column-gap: 0px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+    
+.text h3 {
+    letter-spacing: 6px;
+}
+
+
+
+
+.arts-box {
+    flex-basis: 650px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.hide {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show { 
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.image {
+    flex-basis: 350px;
+    height: 80%;
+    align-self: center;
+    position: relative;
+    transition-delay: 2s;
+    
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+}
+
+.arts-text {
+    height: 100%;
+    width: 400px;
+    overflow: visible;
+}
+
+.image-txt {
+    color: white;
+    letter-spacing: 2px;
+
+    transition: 0.5s ease;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.image-line {
+    height: 20px;
+    width: 2px;
+    background-color: white;
+}
+
+.image-txt:hover {
+    color: red;
+}
+
+@media(max-width:920px) {
+
+
+
+    .arts-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .arts-text {
+        align-self: center;
+        text-align: center;
+    }
+
+}
+
+@media(prefers-reduced-motion) {
+    .hide {
+        transition: none;
+    }
+}
+
+@media(max-width:420px) {
+
+    .hide {
+        transform: translateX(0);
+        transition: none;
+    }
+
+
+    .arts-text {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+}

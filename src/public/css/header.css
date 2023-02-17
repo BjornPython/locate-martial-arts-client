@@ -1,0 +1,165 @@
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.navbar-content {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    width: 500px;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+
+
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.links li a {
+    margin-right: 20px;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+}
+
+.links li a:hover {
+    color: gray;
+}
+
+a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.brand h3 {
+    letter-spacing: 6px;
+    margin-bottom: 0;
+}
+
+.brand p {
+    margin-top: 0;
+    font-size: 8px;
+    letter-spacing: 4px;
+    align-self: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    color: white;
+
+}
+
+.hamburger:hover .bar {
+    background-color: gray;
+}
+
+.btn-dark {
+    color: gray;
+}
+
+@media(max-width:920px) {
+
+    a {
+        color: white;
+    }
+
+    .links {
+        position: fixed;
+        width: 50%;
+        height: 40%;
+        left: 100%;
+        top: 70px;
+        display: block;
+        text-align: center;
+        background-color: darkgray;
+        padding: 10px;
+        transition: 0.3s;
+        
+    }
+
+    .links li  a {
+        margin: auto;
+    }
+
+    .links li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .links.links-active {
+        left: 50%;
+    }
+
+
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+}
+
+@media(max-width:420px) {
+    .brand {
+        justify-content: center;
+    }
+
+    .brand h3 {
+        font-size: 0.6rem;
+    }
+
+    .navbar-brand {
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    .navbar-brand img {
+        width: 55px;
+    }
+}

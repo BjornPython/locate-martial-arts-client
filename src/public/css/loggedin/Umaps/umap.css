@@ -1,0 +1,24 @@
+.u-maps-page {
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+@media(max-width:920px) {
+    .u-maps-page {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        
+    }
+
+
+}
+

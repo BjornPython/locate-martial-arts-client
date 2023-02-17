@@ -1,0 +1,531 @@
+.u-profile-page {
+    margin-left: 60px;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.profile-box {
+    margin-top: 30px;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.profile {
+    display: flex;
+    justify-content:flex-start;
+    width: 300px;
+    color: white;
+}
+
+.profile-avatar {
+    font-size: 3rem;
+    align-self: center;
+}
+.profile-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border-left: 2px white solid;
+    padding-left: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+.edit-profile-info::placeholder {
+    color: gray;
+}
+
+.profile-info input {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 100%;
+    height: 22px;
+    font-size: 1rem;
+
+}
+
+
+.profile-info input::placeholder {
+    color: gray;
+}
+
+.save-name-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
+
+.save-name-btn:hover {
+    background-color: gray;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus{
+    outline: none;
+}
+
+.i-name {
+    font-size: larger;
+}
+
+.i-bio {
+    font-size: medium;
+}
+
+
+.u-profile-contents {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+.u-profile-contents span {
+    margin-top: 1px;
+    width: 80%;
+    border: solid gray 1px;
+    background-color: gray;
+}
+
+.u-profile-contents p {
+    margin-top: 70px;
+    color: gray;
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+.p-setting-icon {
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 1rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.p-setting-icon:hover {
+    color: gray;
+    transition: 0.2s ease-in-out;
+}
+
+.u-setting-icon {
+    font-size: 1rem;
+    align-self: flex-start;
+    cursor: pointer;
+    color: white;
+}
+
+.looking-for {
+    margin-top: 40px;
+    width: 40%;
+    height: 200px;
+}
+
+.u-for {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}   
+
+.u-for-h {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: color 0.2s ease-in;
+    font-weight: 400;
+}
+
+.dropdowns-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+
+}
+
+
+.looking-for-dropdown {
+    width: 180px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px gray;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+
+}
+
+.looking-for-dropdown h4 {
+    font-weight: 400;
+}
+
+.looking-for-dropdown-has {
+    color: white;
+    border-color: white;
+}
+
+.spar-dropdown {
+    z-index: 4000;
+    min-width: 180px;
+    color: gray;
+    border: solid 1px gray;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: color 0.2s ease-in;
+}
+
+.spar-dropdown-active {
+    display: flex;
+    opacity: 1;
+}
+
+.spar-dropdown-has {
+    border-color: black;
+    color: black;
+}
+
+.u-display-mart {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.u-mart-span {
+    width: 0px;
+    height: 100%;
+    background-color: red;
+    border: none;
+    transition: width 0.2s ease-in;
+
+}
+
+.u-mart-span-active {
+    transition: width 0.2s ease-in;
+    width: 5px;
+}
+
+.u-display-mart h4 {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.u-profile-marts {
+    padding-top: 10px;
+    margin-top: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.u-profile-marts h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.u-profile-grp {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.profile-marts-box {
+    border-left: solid 2px white;
+    padding-left: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-marts-box h4 {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.user-loc {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-left: solid 2px white;
+    margin-top: 0;
+
+}
+
+
+.u-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.what-status {
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border: gray 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-in;
+    color: gray;
+}
+
+.what-status-cursor {
+    cursor: pointer;
+}
+
+
+.what-status span {
+    height: 100%;
+    width: 0px;
+    border: none;
+    background-color: red;
+    transition: 0.2s ease-in;  
+}
+
+.what-status-active {
+    border-color: white;
+    color: white;
+}
+
+.what-status-active span {
+    width: 5px;
+}
+
+.status-txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.status-txt h4 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.save-changes {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-changes button {
+    height: 40px;
+    background-color: green;
+    color: white;
+    
+}
+
+.edit-info {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-info h4 {
+    height: auto;
+    display: flex;
+    margin: 0;
+    letter-spacing: 1px;
+    align-items: flex-start;
+}
+
+.u-delete-font {
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.u-delete-font:hover {
+    color: gray;
+}
+
+.add-info {
+    width: 100%;
+    transition: 0.2s ease-in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-info input {
+    width: 80%;
+    border: none;
+}
+
+.add-info-icon {
+    font-size: 1rem;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.add-info-icon:hover {
+    color: gray;
+}
+
+.u-profile-teaches {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teaches-dropdown-btn {
+    margin-top: 20px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.teaches-dropdown-btn h4 {
+    margin: 0;
+}
+
+.teaches-dropdown {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    overflow-y: scroll;
+}
+
+.teaches-mart {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.teaches-mart span {
+    transition: 0.2s ease-in;
+    background-color: red;
+    border: 0;
+    height: 100%;
+    width: 0px;
+}
+
+.teaches-mart-active span {
+    transition: 0.2s ease-in;
+    width: 5px;
+}
+
+
+
+.teaches-mart h4 {
+    margin-left: 5px;
+}
+
+@media(max-width:920px) {
+
+    #spartner-div {
+        width: 280px;
+    }
+
+    #coach-div {
+        width: 280px;
+    }
+
+    .spar-dropdown {
+        width: 300px;
+    }
+
+    .u-profile-contents {
+        width: 70%;
+    }
+
+    .looking-for {
+        height: 400px;
+        column-gap: 80px;
+        margin-bottom: 40px;
+        width: 340px;
+    }
+    
+    
+    .u-for {
+        height: 160px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .u-profile-marts {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+    }
+
+
+    .u-profile-grp {
+     width: 100%;   
+     flex-direction: column;
+    }
+
+
+}

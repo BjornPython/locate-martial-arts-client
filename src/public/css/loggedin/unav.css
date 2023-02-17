@@ -1,0 +1,73 @@
+.u-navbar {
+
+    position: fixed;
+    z-index: 1000;
+    width: 60px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.u-navbar-icons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.u-n-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.u-n-icon:hover {
+    background-color: gray;
+}
+
+.nav-icns {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.nav-icns-active {
+    color: white;
+}
+.profile-btn-span {
+    width: 0px;
+    color: red;
+    background-color: red;
+    height: 100%;
+    transition: width ease-in 0.2s;
+}
+
+.profile-btn-span-active {
+    width: 5px;
+    transition: width ease-in 0.2s;
+}
+
+.sign-out-btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.2rem;
+    transform: rotateY(180deg);
+}
+
+.nav-msg-icn {
+    font-size: 1.45rem;
+}

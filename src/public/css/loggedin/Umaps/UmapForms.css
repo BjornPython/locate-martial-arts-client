@@ -1,0 +1,219 @@
+.u-map-css {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+}
+
+.address-forms {
+    display: flex;
+}
+
+.address-forms button {
+    width: 45px;
+    border-radius: 0px;
+    border-width: 1px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.address-forms button:hover {
+    background-color: gray;
+    transition: background-color 0.2s ease-in;
+}
+
+.u-loc-btn {
+    margin-right: 3px;
+}
+
+.u-loc-icon {
+    height: 30px;
+    margin-right: 0;
+}
+
+.u-address-input {
+    color: white;
+    border: none;
+    width: 320px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    background-color: transparent;
+}
+
+.u-address-input::placeholder {
+    color: gray;
+}
+
+.u-map-form-hr {
+    width: 100%;
+    margin-top: 20px;
+    height: 1.5px;
+    border: none;
+    background-color: gray;
+}
+
+.display-error {
+    position: absolute;
+    top: -50px;
+    color: red;
+    opacity: 0;
+}
+
+.display-error-active {
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+
+.u-search-icon {
+    height: 25px;
+}
+
+.u-searchres-div {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50px;
+    width: 327px;
+    max-width: 327px;
+    border: black 1px solid;
+
+}
+
+.u-searchres-div h3 {
+    margin-left: 5px;
+}
+
+.u-searchres-div h3:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.u-lf-for {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.u-lf-div {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    cursor: pointer;
+    width: 110px;
+    transition: background-color 0.2s ease-in;
+}
+
+.u-lf-div:hover {
+    transition: background-color 0.2s ease-in;
+    background-color: gray;
+}
+
+.u-lf-btn {
+    height: 100%;
+    color: white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-lf-span {
+    height: 100%;
+    width: 0px;
+    background-color: red;
+    border: none;
+    transition: width 0.2s ease-in;
+}
+
+.u-lf-span-active {
+    transition: width 0.2s ease-in;
+    width: 5px;
+}
+
+.u-lf-marts-div {
+    align-self: flex-start;
+    margin-top: 40px;
+    width: 250px;
+    color: white;
+    position: relative;
+}
+
+.u-lf-marts-box {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    margin: 0;
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.u-lf-marts-box h3 {
+    margin: 0;
+}
+
+.u-lf-marts-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-top: 8px;
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+    overflow-y: scroll;
+    position: absolute;
+}
+
+.u-marts-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.u-marts-div h4 {
+    margin-left: 10px;
+    color: black;
+}
+
+.u-search-btn-div {
+    cursor: pointer;
+    background-color: yellow;
+    border: black 2px solid;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.u-search-btn-div h2 {
+    font-weight: 500;
+}
+
+@media(max-width:920px) {
+    .u-lf-marts-dropdown {
+        height: 250px;
+    }
+}
+

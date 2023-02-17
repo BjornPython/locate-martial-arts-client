@@ -1,0 +1,54 @@
+.map {
+    height: 500px;
+    width: 450px;
+}
+
+.apphome-recenter-btn {
+    z-index: 1000;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.apphome-recenter-btn:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.apphome-recenter-icn {
+    color: white;
+    height: 25px;
+}
+
+.apphome-eye-btn {
+    z-index: 1000;
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.apphome-eye-btn:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media(max-width:420px) {
+    
+
+    .map {
+        height: 500px;
+        width: 320px;
+    }
+}

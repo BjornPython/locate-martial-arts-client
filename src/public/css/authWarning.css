@@ -1,0 +1,7 @@
+.auth-warning {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}

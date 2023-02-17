@@ -1,0 +1,52 @@
+.gym-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gym-components {
+    width: 90%;
+    height: 720px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.map-info {
+    margin-left: 200px;
+}
+
+
+.map-bg {
+    width: 500px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #171616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+@media(max-width:920px) {
+    .gym-page {
+        margin-top: 150px;
+        height: 1200px;
+    }
+
+    .gym-components {
+        height: 1200px;
+
+        flex-direction: column;
+    }
+  }
+  
+  @media(max-width:420px) {
+    .map-bg {
+        width: 350px;
+    }
+  }
+
+
+

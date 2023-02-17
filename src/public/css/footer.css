@@ -1,0 +1,188 @@
+.main-footer {
+    position: relative;
+    height: auto;
+    /* background-color: #171616; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 80px;
+
+}
+
+
+.footer-background {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/gym-image.jpg"); 
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: -400px;
+    background-position-x: -20px;
+}
+
+.footer-main-info {
+    margin-top: 80px;
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-main-info h1 {
+    margin: 0;
+}
+
+.footer-main-info h4 {
+    margin: 0;
+}
+
+.footer-logo {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.brand-icn {
+    width: 50px;
+}
+
+
+.footer-brand {
+    margin-top: 0px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.footer-brand h3 {
+    margin-top: 10px;
+    letter-spacing: 6px;
+    margin-bottom: 0;
+}
+
+.footer-brand p {
+    margin-top: 0;
+    font-size: 8px;
+    letter-spacing: 4px;
+    align-self: center;
+}
+
+.footer-info {
+    margin-top: 10px;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 160px;
+    border-bottom: 1px solid white;
+}
+
+
+.info-grp {
+    display: flex;
+}
+
+.info-grp p {
+    margin: 0;
+}
+
+
+.info-grp-icn {
+    width: 20px;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.footer-about-info {
+    margin-top: 5px;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 165px;
+    border-bottom: 1px solid white;
+}
+
+.footer-about-info h4{
+    margin-top: 0;
+    margin-left: 40%;
+
+}
+
+.footer-about-info p {
+    margin-left: 40%;
+    color: #c5c6cc
+}
+
+.copyright {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #c5c6cc;
+}
+
+@media(max-width:1100px) {
+    .footer-info {
+        height: 220px;
+    }
+
+    .footer-about-info {
+        height: 225px;
+    }
+}
+
+@media(max-width:960px) {
+
+    .footer-main-info {
+        row-gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .footer-info {
+        border-bottom: none;
+        width: 400px;
+    }
+
+    .info-grp {
+        margin-left: 20px;
+    }
+
+    .footer-about-info {
+        text-align: center;
+        width: 400px;
+        overflow: visible;
+        border-bottom: none;
+    }
+    .footer-about-info h4 {
+        margin-left: 0;
+    }
+
+    .footer-about-info p {
+        margin-left: 0;
+    }
+} 
+
+@media(max-width:420px) {
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-brand h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer-info {
+        width: 100%;
+    }
+
+    .footer-about-info {
+        width: 100%;
+    }
+}

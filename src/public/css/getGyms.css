@@ -1,0 +1,11 @@
+.markers {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.markers h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

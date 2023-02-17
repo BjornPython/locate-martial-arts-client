@@ -1,0 +1,77 @@
+.u-map-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    min-width: 500px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+.user-marker-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-marker-popup button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.user-marker-popup button:hover {
+    transition: 0.2s ease-in;
+    background-color: gray;
+}
+
+.recenter-btn {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.recenter-btn:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.recenter-icn {
+    height: 25px;
+    color: white;
+}
+
+.eye-btn {
+    position: absolute;
+    z-index: 1000;
+    top: 90px;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.eye-btn:hover {
+    transition: 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.eye-icn {
+    height: 25px;
+    color: white;
+}

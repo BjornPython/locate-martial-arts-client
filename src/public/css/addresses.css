@@ -1,0 +1,12 @@
+.address-label {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.address-label:hover {
+    color: gray ;
+}
+
+.address-sg {
+    cursor: pointer;
+}
