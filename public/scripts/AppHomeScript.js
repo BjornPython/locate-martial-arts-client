@@ -3,8 +3,8 @@
 
     window.onload = () => {
 
-
-console.log("LOADING SCTIPTS");
+    setTimeout(() => {
+        console.log("LOADING SCTIPTS");
     const homeButton = document.querySelector(".home-btn");
     console.log("HOME BTN: ", homeButton);
     const loginPage = document.querySelector(".login-page");
@@ -179,6 +179,9 @@ console.log("LOADING SCTIPTS");
             btn.classList.toggle("find-btn-active")
         })
     })
+    
+    }, 500);
+    
 
 
 
