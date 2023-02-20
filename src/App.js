@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 
 import UserHome from './public/routes/UserHome';
 
-import { useEffect } from 'react';
 import AppHome from './public/routes/AppHome';
 import Ghome from './public/comps/gymLoggedin/Ghome';
 
