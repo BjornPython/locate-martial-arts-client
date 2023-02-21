@@ -12,9 +12,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useMemo } from 'react'
 import apiService from '../../../features/apis/apiService'
 import { logout } from '../../../features/authentication/authSlice'
-import io from 'socket.io-client';
 
-const socket = io('http://localhost:8000');
+
+import { io } from 'socket.io-client'
+
+const socket = io(`${process.env.REACT_APP_BACKEND_ENDPOINT}`)
 
 function Uhome() {
 

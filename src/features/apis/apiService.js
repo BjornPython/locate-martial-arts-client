@@ -1,8 +1,8 @@
 import axios from "axios";
 
 
-const GYM_API_ENDPOINT = `${process.env.ENDPOINT}/api/gym` || "http://localhost:8000/api/gym"
-const USERS_API_ENDPOINT = `${process.env.ENDPOINT}/api/users` || "http://localhost:8000/api/users"
+const GYM_API_ENDPOINT = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/gym` || "http://localhost:8000/api/gym"
+const USERS_API_ENDPOINT = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/users` || "http://localhost:8000/api/users"
 
 
 const findGyms = async (location, marts) => { 

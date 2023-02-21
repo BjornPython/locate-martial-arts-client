@@ -1,9 +1,9 @@
 import axios from "axios"
 
 
-const API_URL = "http://localhost:8000/api/users/"
+const API_URL = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/users/`
 
-const GYM_API_ENDPOINT = "http://localhost:8000/api/gym"
+const GYM_API_ENDPOINT = `${process.env.REACT_APP_BACKEND_ENDPOINT}/api/gym`
 
 
 const registerUser = async (userData) => {
